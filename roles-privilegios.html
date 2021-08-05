@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles/sidebar.css">
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="icon" href="https://www.condumex.com.mx/wp-content/uploads/2020/05/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://www.condumex.com.mx/wp-content/uploads/2020/05/favicon.png" type="image/png" sizes="32x32">
+      <title>Administración de usuarios</title>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <img src="images/logo-sidebar.png" alt="logo condumex">
+      <span class="logo_name">CONDUMEX</span>
+    </div>
+    <ul class="nav-links">
+      
+      <li>
+        <div class="iocn-link">
+            <a href="monitor.php">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="link_name">Monitor piso</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Monitor piso</a></li>
+          <li><a href="monitor-piso-details.php?tipo_maquina=Irradiado">Irradiado</a></li>
+          <li><a href="monitor-piso-details.php?tipo_maquina=Repase">Repase</a></li>
+          <li><a href="monitor-piso-details.php?tipo_maquina=Termo%20Fijo">Termo fijo</a></li>
+          <li><a href="monitor-piso-details.php?tipo_maquina=Termo%20Plastico">Termo plastico</a></li>
+        </ul>
+      </li>
+      <li>
+         
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Catalogos</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Catalogos</a></li>
+          <li><a href="catalogo-compuestos.html">Compuestos</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="bitacora-eventos.html">
+          <i class='bx bx-calendar-event' ></i>
+          <span class="link_name">Bitacora de eventos</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="bitacora-eventos.html">Bitacora de eventos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="maestros.html">
+          <i class='bx bx-wrench' ></i>
+          <span class="link_name">Maestros</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="maestros.html">Maestros</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+            <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="link_name">Usuarios</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+            <ul class="sub-menu">
+            <li><a class="link_name" href="#">Usuarios</a></li>
+            <li><a href="administracion-usuarios.html">Administración</a></li>
+            <li><a href="roles-privilegios.html">Roles y privilegios</a></li>
+            </ul>
+        </li>
+        <div class="profile-details">
+            <div class="profile-content">
+            <img src="images/avatar.png" alt="profileImg">
+        </div>
+        <div class="name-job">
+            <div class="profile_name">Prem Shahi</div>
+            <div class="job">Web Desginer</div>
+        </div>
+          <i class='bx bx-log-out' style="color: #fff;"></i>
+        </div>
+    </li>
+    </ul>
+  </div>
+
+
+      <!-- CONTENIDO DE LA PAGINA -->
+      <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+          <span class="text">ROLES Y PRIVILEGIOS</span>
+        </div>
+        <div class="btn-group my-4 mx-4" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Eliminar</button>
+            <button type="button" class="btn btn-secondary">Nuevo</button>
+            <button type="button" class="btn btn-secondary">Modificar</button>
+        </div>
+        <div class="col-lg-2 mx-4">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Rol</option>
+                <option value="1">Administrador</option>
+                <option value="2">Supervisor Mantto</option>
+                <option value="3">Operador</option>
+            </select>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <tr>
+                              <th>Id</th>
+                              <th>Rol</th>
+                          </tr>
+                          <tr>
+                              <td>01</td>
+                              <td>Administrador</td>
+                          </tr>
+                          <tr>
+                              <td>02</td>
+                              <td>Supervisor Mantto</td>
+                          </tr>
+                          <tr>
+                              <td>03</td>
+                              <td>Operador</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <h6 class="mt-3">Pantalla</h6>
+                    <div class="card">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <tr>
+                              <th>Id</th>
+                              <th>Pantalla</th>
+                          </tr>
+                          <tr>
+                              <td>01</td>
+                              <td>Recetas</td>
+                          </tr>
+                          <tr>
+                              <td>02</td>
+                              <td>Reporta paros</td>
+                          </tr>
+                          <tr>
+                              <td>03</td>
+                              <td>Maestros</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <h6 class="mt-3">Privilegios</h6>
+                    <div class="card">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <tr>
+                              <th>Id</th>
+                              <th>Privilegios</th>
+                          </tr>
+                          <tr>
+                              <td>01</td>
+                              <td>Modificar</td>
+                          </tr>
+                          <tr>
+                              <td>02</td>
+                              <td>Agregar</td>
+                          </tr>
+                          <tr>
+                              <td>03</td>
+                              <td>Eliminar</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/gauge.min.js"></script>
+    <script src="js/monitor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </body>
+</html>

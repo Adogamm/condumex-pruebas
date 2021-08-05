@@ -1,0 +1,214 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    padding: 45px;
+    background-image: url(../images/backgrounds/circuit.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: inherit;
+}
+
+/* Contenedor principal */
+
+.container-all {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 620px;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Conetenedor del login */
+
+.ctn-form {
+    width: 80%;
+    max-width: 500px;
+    padding: 40px;
+    background: #f7f7f7;
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #585858;
+}
+
+label {
+    display: block;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+
+input[type=email],input[type=password] {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    background: rgba(0,0,0,0);
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    color: #fc6625;
+    font-size: 16px;
+    transition: all 0.6s ease;
+}
+
+input[type=email]:hover,input[type=password]:hover {
+    color: #fc6625;
+    border-bottom: 1px solid #fc6625;
+}
+
+input[type=email]:focus,input[type=password]:focus {
+    border-bottom: 1px solid #fc6625;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 40px;
+    margin-top: 100px;
+    color: white;
+    border: 0px;
+    background: #fc6625;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.15s ease;
+}
+
+input[type=submit]:hover {
+    background: rgba(255,150,0);
+}
+
+.text-footer {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    color: #7a7a7a;
+    font-weight: 300;
+}
+
+.text-footer a {
+    text-decoration: none;
+    color: #fc6625;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.text-footer a:hover {
+    text-decoration: none;
+    color: rgba(255,135,0);
+    font-weight: 500;
+}
+
+.footer-logo {
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: auto;
+}
+
+/* Texto lateral */
+
+.ctn-text {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.capa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(rgba(248,160,0) 30%,#ff8625 70%);
+    opacity: 0.8;
+}
+
+.title-description {
+    position: relative;
+    top: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+
+.text-description {
+    position: relative;
+    top: 55px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.logo-organization {
+    width: 70px;
+}
+
+.organization {
+    padding: 0;
+    margin-top: 200px;
+    position: relative;
+    text-align: center;
+}
+
+.organization a{
+    text-decoration: none;
+    color: #f7f7f7;
+    font-weight: 300;
+}
+
+.organization a:hover{
+    color: white;
+    font-weight: 400;
+}
+
+.vertical-center {
+    margin: 0;position: absolute;top: 50%;-ms-transform: translateY(-50%);transform: translateY(-50%);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px){
+    .ctn-text{
+        display: none;
+    }
+
+    .ctn-form{
+        margin: auto;
+        width: 100%;
+    }
+}
